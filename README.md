@@ -1,0 +1,1 @@
+# spx-translation-chrome
