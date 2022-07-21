@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@mlmdflr/tools": "^1.0.2",
-    "@youliso/web-modules": "^1.0.0",
     "core-js": "^3.8.3",
     "naive-ui": "^2.31.0",
     "vue": "^3.2.13"

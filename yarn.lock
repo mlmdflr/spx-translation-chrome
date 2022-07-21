@@ -1821,11 +1821,6 @@
   resolved "https://registry.npmmirror.com/@xtuc/long/-/long-4.2.2.tgz#d291c6a4e97989b5c61d9acf396ae4fe133a718d"
   integrity sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==
 
-"@youliso/web-modules@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@youliso/web-modules/-/web-modules-1.0.0.tgz#16c75e6777e0f86b8b2417ad5029c7bae86afa7f"
-  integrity sha512-JE4iQN8ucUnfM8qgXk32R80RU6/PNGVZmgGcZhOKlp7O/I3z2uyVxNs7ZjWwtsH4LcsRUX1KiSHiCBzBA580Gg==
-
 accepts@~1.3.4, accepts@~1.3.5, accepts@~1.3.8:
   version "1.3.8"
   resolved "https://registry.npmmirror.com/accepts/-/accepts-1.3.8.tgz#0bf0be125b67014adcb0b0921e62db7bffe16b2e"
