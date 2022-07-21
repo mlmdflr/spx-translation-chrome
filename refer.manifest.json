@@ -1,0 +1,46 @@
+{
+    "name": "spx-translation-chrome",
+    "description": "spx-translation chrome-plugin",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "js/background.js"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "action": {
+        "default_popup": "reception.html"
+    },
+    "icons": {
+        "16": "images/tray.png",
+        "48": "images/tray.png",
+        "128": "images/tray.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://translate.google.com/*"
+            ],
+            "js": [
+                "google/com/js/base.js"
+            ],
+            "css": [
+                "google/com/css/base.css"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "matches": [
+                "https://translate.google.cn/*"
+            ],
+            "js": [
+                "google/cn/js/base.js"
+            ],
+            "css": [
+                "google/cn/css/base.css"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
