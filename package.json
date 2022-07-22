@@ -1,12 +1,12 @@
 {
-  "name": "temp",
-  "version": "0.1.0",
+  "name": "translation-chrome",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-zip": "vue-cli-service build && node build.js",
     "lint": "vue-cli-service lint",
-    "build-watch": "vue-cli-service  --env.NODE_ENV=development build-watch --mode development"
+    "dev": "vue-cli-service  --env.NODE_ENV=development build-watch --mode development"
   },
   "dependencies": {
     "@mlmdflr/tools": "^1.0.2",
