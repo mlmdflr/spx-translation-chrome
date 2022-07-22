@@ -4,14 +4,14 @@ const fs = require('fs')
 // Generate pages object
 const pages = {}
 
-function getEntryFile (entryPath) {
+function getEntryFile(entryPath) {
   let files = fs.readdirSync(entryPath)
   return files
 }
 
 const chromeName = getEntryFile(path.resolve(`src/entry`))
 
-function getFileExtension (filename) {
+function getFileExtension(filename) {
   return /[.]/.exec(filename) ? /[^.]+$/.exec(filename)[0] : undefined
 }
 chromeName.forEach((name) => {

@@ -1,19 +1,21 @@
 <template>
   <div class="main_app">
-    <h1>Hello {{msg}}</h1>
+    <h1>Hello {{ msg }}</h1>
   </div>
 </template>
 
 <script>
-export default {
+import { defineComponent } from 'vue'
+export default defineComponent({
   name: 'devtoolsView',
-  data () {
+  components: {
+  },
+  setup() {
     return {
-      msg: 'devdools'
+      msg: 'devtools'
     }
   }
-}
-
+})
 </script>
 
 <style>

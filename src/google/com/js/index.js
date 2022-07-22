@@ -40,6 +40,7 @@ function getImgUrl() {
 
 export const init = () => {
     require('../css/index.css');
+    getImgUrl()
     try {
         //文字按钮点击获焦
         document.querySelector('.cWQYBc').onclick = () => {

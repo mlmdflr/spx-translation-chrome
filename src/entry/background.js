@@ -1,19 +1,8 @@
 import { net } from "../conn/net";
+import { getSearchCountApi } from "../conn/wallhaven";
 import { random, PageUtil, } from "@mlmdflr/tools";
 // sleep
 console.log('hello spx-translation~')
-
-
-async function getSearchCountApi(name) {
-    let search
-    try {
-        search = await net(`https://wallhaven.cc/api/v1/search?q=${name}`, { timeout: 3000 })
-    } catch (error) {
-        return undefined
-    }
-    console.log(search);
-    return search['meta']['total']
-}
 
 async function pupImgApi(name) {
     try {
@@ -57,12 +46,12 @@ pupImgApi('rikka').then(res => {
 
 async function core() {
     try {
-        let url = await pupImgApi(await chrome.storage.sync.get('Keyword')?.Keyword ?? 'rikka')
+        let url = await pupImgApi((await chrome.storage.sync.get('Keyword'))?.Keyword ?? 'rikka')
         lastUrl = url
-        return { url, ggopacity: await chrome.storage.sync.get('ggopacity')?.ggopacity ?? 0.8 }
+        return { url, ggopacity: (await chrome.storage.sync.get('ggopacity'))?.ggopacity ?? 0.8 }
     } catch (error) {
         console.log(error);
-        return { url: lastUrl, ggopacity: await chrome.storage.sync.get('ggopacity')?.ggopacity ?? 0.8 }
+        return { url: lastUrl, ggopacity: (await chrome.storage.sync.get('ggopacity'))?.ggopacity ?? 0.8 }
     }
 
 }

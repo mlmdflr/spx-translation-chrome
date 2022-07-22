@@ -28,15 +28,17 @@
 </template>
 
 <script>
-export default {
+import { defineComponent } from 'vue'
+export default defineComponent({
   name: 'popupView',
-  data () {
+  components: {
+  },
+  setup() {
+    
     return {
-      msg: 'popup'
     }
   }
-}
-
+})
 </script>
 
 <style>
